@@ -1,0 +1,14 @@
+{% extends "base.html" %} 
+
+{% block content %} 
+{% for row in data %}
+<details>
+    <summary>
+            Name: {{ row[1] }} {{ row[2]}}
+    </summary>
+    <br>
+    email: {{row[3]}}; employer: {{row[8]}}
+</details>
+<br>
+{% endfor %}
+{% endblock %}
